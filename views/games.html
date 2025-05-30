@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+</head>
+<body>
+    <h2>Games</h2>
+    <hr>
+    
+    {% for k, v in game.items() %}
+    {{k}}: {{v}} <br>
+    {% endfor %}
+
+    <p>O jogo {{game['Titulo']}} tem {{2025 - game['Ano']}} anos</p>
+    <p>Está sendo jogador por:</p>
+    <ol>
+        {% for j in jogadores: %}
+            <li>{{j}}</li>
+        {% endfor %}
+    </ol>
+
+</body>
+</html>
